@@ -1,39 +1,51 @@
+import numpy as np
+import matplotlib.pyplot as plt 
 
-a = np.array([2.0, 4.0, 8.0, 16.0])
-b = np.array([0, 1 + 0j, 1 + 1j, 2 - 2j])
-c = np.array(["a", "b", "c", "d"])
-print(a)
-print(b)
-print(c)
-#create the list inside of the array function
-np.array([n for n in range(10)])
+# just testing some numpy functions 
+result =[]
+for x in range (10):
+    result.append(x)
+print(result)
+ 
+ # to create an array np.array 
+result = np.array(result) 
+print (result)
+result=np.array(x for x in range(10))
+print(result)
 
-np.arange(0, 10, 2)
-array([0, 2, 4, 6, 8])
+ # to increment by a specific number use np.arange a(start,stop,increase by)
+result =np.arange(0,10,2)
+print(result)
+result = np.arange(2,10,3)
+print(result)
 
-np.linspace(0, 10, 5)
-array([ 0. ,  2.5,  5. ,  7.5, 10. ])
+ # to get a specific number of values within a range a(start,stop,steps)
+result = np.linspace(0,10,5) # increment by 10/4
+print(result)
+result = np.linspace(3,20,5) # increment by (20-3)/4
+print(result)
 
+ # arithmeic 
+result= [5 * (result**2) -4]
+print(result)
+result = np.array([x**2 for x in range(4)])
+result = np.sqrt(result)
+print(result)
+result=np.arange(10)
+result=result[3::3]
+print(result)
 
-5 * a**2 - 4
-array([ 1, 16, 41, 76])
+ #boolean 
+result=np.arange(11)
+print(result)
+print(result<0)  
+print(result%2==0)
 
-x = np.array([x**2 for x in range(4)])
-np.sqrt(x)
-array([0., 1., 2., 3.])
+# a[3::3] = -1
+# print(a)
+# [ 0  1  2 -1  4  5 -1  7  8 -1 10 11 -1 13 14 -1 16 17 -1 19]
 
-a = np.array([0, -1, 2, -3, 4])
-print(a < 0)
+# a = np.arange(10)
+# a[::-1]
+# array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 
-a = np.arange(20)
-a[3::3]
-a[start:stop:step]
-array([ 3,  6,  9, 12, 15, 18])
-
-a[3::3] = -1
-print(a)
-[ 0  1  2 -1  4  5 -1  7  8 -1 10 11 -1 13 14 -1 16 17 -1 19]
-
-a = np.arange(10)
-a[::-1]
-array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
