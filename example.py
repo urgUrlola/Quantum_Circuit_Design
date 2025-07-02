@@ -1,33 +1,39 @@
-def max_dist(xc, yc):
-    """
-    Finds the maximum distance between any two points
-    in a collection of 2D points.  The points corresponding
-    to this distance are also returned.
 
-    Parameters
-    ----------
-    xc : list
-        List of x-coordinates
-    yc : list
-        List of y-coordinates
+a = np.array([2.0, 4.0, 8.0, 16.0])
+b = np.array([0, 1 + 0j, 1 + 1j, 2 - 2j])
+c = np.array(["a", "b", "c", "d"])
+print(a)
+print(b)
+print(c)
+#create the list inside of the array function
+np.array([n for n in range(10)])
 
-    Returns
-    -------
-    max_dist : float
-        Maximum distance
-    xvals : list
-        x-coodinates of two points
-    yvals : list
-        y-coordinates of two points
+np.arange(0, 10, 2)
+array([0, 2, 4, 6, 8])
 
-    """
-    max_dist = 0.0  # initialize max_dist
-    num_points = len(xc)  # number of points in collection
-    for ii in range(num_points):
-        for jj in range(num_points):
-            dist = dist2d(xc[ii], yc[ii], xc[jj], yc[jj])
-            if dist > max_dist:
-                max_dist = dist
-                xvals = [xc[ii], xc[jj]]
-                yvals = [yc[ii], yc[jj]]
-    return max_dist, xvals, yvals
+np.linspace(0, 10, 5)
+array([ 0. ,  2.5,  5. ,  7.5, 10. ])
+
+
+5 * a**2 - 4
+array([ 1, 16, 41, 76])
+
+x = np.array([x**2 for x in range(4)])
+np.sqrt(x)
+array([0., 1., 2., 3.])
+
+a = np.array([0, -1, 2, -3, 4])
+print(a < 0)
+
+a = np.arange(20)
+a[3::3]
+a[start:stop:step]
+array([ 3,  6,  9, 12, 15, 18])
+
+a[3::3] = -1
+print(a)
+[ 0  1  2 -1  4  5 -1  7  8 -1 10 11 -1 13 14 -1 16 17 -1 19]
+
+a = np.arange(10)
+a[::-1]
+array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
