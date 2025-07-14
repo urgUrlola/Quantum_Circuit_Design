@@ -1,12 +1,26 @@
-from qiskit_metal import designs, MetalGUI
-import sys
 
+%load_ext autoreload
 
+%autoreload 2
 
-# To Create a new design
-design=designs.DesignPlanar()
+ 
 
-# To Launch Metal GUI with this design
+import numpy as np
+
+from collections import OrderedDict
+
+ 
+
+from qiskit_metal import designs, draw
+
+from qiskit_metal import MetalGUI, Dict, Headings
+
+ 
+
+design = designs.DesignPlanar()
+
 gui = MetalGUI(design)
 
-# keeps GUI running un ghhhhggg 
+ 
+
+design.overwrite_enabled = True
