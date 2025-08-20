@@ -1,12 +1,12 @@
 7-Transmon Quantum Chip Simulation
 
-Project Description
+Project Description:
 Simulation and design of a superconducting quantum chip composed of seven transmon qubits, including six fixed-frequency qubits and one central flux-tunable qubit. The project models qubit-resonator interactions, multi-qubit dynamics, and key quantum properties like T1 relaxation times, using Qiskit Metal, QuTiP, and electromagnetic simulations.
 
-Motivation
+Motivation:
 Superconducting qubits are a leading platform for scalable quantum computing. Understanding qubit-resonator interactions, energy spectra, and coherence times is essential for designing high-fidelity quantum hardware. This project bridges theoretical quantum mechanics with practical device design.
 
-Key Results
+Key Results:
 
 Designed and visualized the 7-qubit chip layout using Qiskit Metal.
 
@@ -18,7 +18,7 @@ Simulated T1 relaxation times for all qubits; values ranged 18–35 µs, consist
 
 Developed an end-to-end simulation pipeline from chip design to quantum dynamics analysis.
 
-Tools & Technologies
+Tools & Technologies:
 
 Qiskit Metal – Chip layout and design
 
@@ -38,7 +38,7 @@ Dependencies: Qiskit, QuTiP, NumPy, Matplotlib, Elmer FEM (optional for EM simul
 
 Instructions for running each module are documented in the notebook files.
 
-Visuals / Results
+Visuals / Results:
 
 Qubit frequencies, resonator detunings, and layout schematics included in figures/.
 
