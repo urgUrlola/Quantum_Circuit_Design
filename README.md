@@ -53,4 +53,4 @@ Compare simulated results with experimental data from published superconducting 
 Scale up for multi-qubit gate analysis and entanglement studies in a circuit QED setup.
 
 Full Paper
-For a detailed technical report, see
+For a detailed technical report, see https://www.linkedin.com/in/ngawang-rigdol-80ba0b293/overlay/projects/11663106/multiple-media-viewer/?profileId=ACoAAEcptssB2KFF6Kg9mC-JovuRyJXame0pxO0&treasuryMediaId=1754506669854 
